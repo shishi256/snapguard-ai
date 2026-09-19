@@ -1,0 +1,13 @@
+{
+  "model_name": "YOLOv8n",
+  "model_file": "yolov8n.onnx",
+  "input_size": [640, 640],
+  "confidence_threshold": 0.50,
+  "iou_threshold": 0.45,
+  "person_class_id": 0,
+  "description": "YOLOv8 Nano — lightweight real-time object detection model",
+  "license": "AGPL-3.0",
+  "source": "Ultralytics",
+  "qualcomm_ai_hub_model_id": "yolov8_det",
+  "notes": "Person class (class 0) is used for privacy detection. Other classes are ignored."
+}

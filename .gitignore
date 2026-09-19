@@ -1,0 +1,62 @@
+# SnapGuard AI — .gitignore
+
+# ── Environment / Secrets ────────────────────────────────────────────────────
+.env
+.env.local
+*.key
+*.pem
+secrets/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env.bak
+
+# ── Data / Logs ───────────────────────────────────────────────────────────────
+data/*.db
+logs/*.log
+logs/*.log.*
+
+# ── Models (large binary files — document separately) ──────────────────────
+*.onnx
+*.pt
+*.bin
+*.tflite
+models/*.onnx
+models/*.pt
+models/*.bin
+models/*.tflite
+
+# ── Build artifacts ────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Test / Coverage ───────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+
+# ── Demo videos ───────────────────────────────────────────────────────────────
+assets/demo_video.mp4

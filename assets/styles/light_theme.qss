@@ -1,0 +1,531 @@
+/* SnapGuard AI — Premium Light Theme v2.0 */
+
+/* ── Global ── */
+QWidget {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-family: "SF Pro Display", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    border: none;
+    outline: none;
+}
+
+QMainWindow {
+    background-color: #F8FAFC;
+}
+
+/* ── Sidebar ── */
+#sidebar {
+    background-color: #FFFFFF;
+    border-right: 1px solid #E2E8F0;
+    min-width: 230px;
+    max-width: 230px;
+}
+
+#sidebar_logo_label {
+    color: #0284C7;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 28px 22px 6px 22px;
+    letter-spacing: 0.5px;
+}
+
+#sidebar_tagline {
+    color: #64748B;
+    font-size: 10px;
+    padding: 0 22px 22px 22px;
+    letter-spacing: 0.3px;
+}
+
+/* Nav buttons */
+QPushButton#nav_btn {
+    background-color: transparent;
+    color: #475569;
+    text-align: left;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+QPushButton#nav_btn:hover {
+    background-color: rgba(2, 132, 199, 0.06);
+    color: #0F172A;
+    border-left: 3px solid rgba(2, 132, 199, 0.4);
+}
+
+QPushButton#nav_btn[active="true"] {
+    background-color: rgba(2, 132, 199, 0.10);
+    color: #0284C7;
+    border-left: 3px solid #0284C7;
+    font-weight: 700;
+}
+
+/* ── Content area ── */
+#content_area {
+    background-color: #F8FAFC;
+}
+
+#page_title {
+    color: #0F172A;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 28px 0 4px 0;
+    letter-spacing: 0.3px;
+}
+
+#page_subtitle {
+    color: #64748B;
+    font-size: 12px;
+    padding: 0 0 24px 0;
+    letter-spacing: 0.2px;
+}
+
+/* ── Cards (Crisp Clean Elevation) ── */
+#card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card:hover {
+    border: 1px solid rgba(2, 132, 199, 0.4);
+}
+
+#card_title {
+    color: #64748B;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+#card_value {
+    color: #0F172A;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 0 4px 0;
+}
+
+#card_sub {
+    color: #64748B;
+    font-size: 11px;
+}
+
+/* ── Status badges ── */
+#badge_safe {
+    background-color: rgba(16, 185, 129, 0.12);
+    color: #059669;
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_warning {
+    background-color: rgba(245, 158, 11, 0.12);
+    color: #D97706;
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_danger {
+    background-color: rgba(239, 68, 68, 0.12);
+    color: #DC2626;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_info {
+    background-color: rgba(2, 132, 199, 0.12);
+    color: #0284C7;
+    border: 1px solid rgba(2, 132, 199, 0.35);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_neutral {
+    background-color: #F1F5F9;
+    color: #64748B;
+    border: 1px solid #CBD5E1;
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+/* ── Buttons ── */
+QPushButton {
+    background-color: #FFFFFF;
+    color: #1E293B;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #F8FAFC;
+    border-color: #0284C7;
+    color: #0284C7;
+}
+
+QPushButton:pressed {
+    background-color: #F1F5F9;
+}
+
+QPushButton:disabled {
+    color: #94A3B8;
+    border-color: #E2E8F0;
+    background-color: #F8FAFC;
+}
+
+QPushButton#btn_primary {
+    background-color: rgba(16, 185, 129, 0.12);
+    color: #059669;
+    border: 1.5px solid #10B981;
+    font-weight: 700;
+}
+
+QPushButton#btn_primary:hover {
+    background-color: rgba(16, 185, 129, 0.22);
+    border-color: #059669;
+}
+
+QPushButton#btn_danger {
+    background-color: rgba(239, 68, 68, 0.12);
+    color: #DC2626;
+    border: 1.5px solid #EF4444;
+    font-weight: 700;
+}
+
+QPushButton#btn_danger:hover {
+    background-color: rgba(239, 68, 68, 0.22);
+    border-color: #DC2626;
+}
+
+QPushButton#btn_blue {
+    background-color: rgba(2, 132, 199, 0.10);
+    color: #0284C7;
+    border: 1.5px solid #0284C7;
+    font-weight: 700;
+}
+
+QPushButton#btn_blue:hover {
+    background-color: rgba(2, 132, 199, 0.20);
+    border-color: #0369A1;
+}
+
+/* ── Camera feed (High-contrast dark viewport) ── */
+#camera_frame {
+    background-color: #020617;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 12px;
+    min-width: 420px;
+    min-height: 320px;
+}
+
+/* ── Alert overlay ── */
+#alert_overlay {
+    background-color: #FEF2F2;
+    border: 1.5px solid #F87171;
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+
+#alert_title {
+    color: #DC2626;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#alert_message {
+    color: #1E293B;
+    font-size: 13px;
+}
+
+/* ── Status bar ── */
+QStatusBar {
+    background-color: #FFFFFF;
+    color: #64748B;
+    border-top: 1px solid #E2E8F0;
+    font-size: 11px;
+    padding: 3px 12px;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+/* ── Sliders ── */
+QSlider::groove:horizontal {
+    background: #E2E8F0;
+    height: 4px;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: #0284C7;
+    width: 16px;
+    height: 16px;
+    margin: -6px 0;
+    border-radius: 8px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #38BDF8;
+    border-radius: 2px;
+}
+
+/* ── Combo ── */
+QComboBox {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 7px 14px;
+    color: #1E293B;
+    min-width: 160px;
+}
+
+QComboBox:hover {
+    border-color: #0284C7;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    color: #1E293B;
+    selection-background-color: rgba(2, 132, 199, 0.15);
+    selection-color: #0F172A;
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 12px;
+}
+
+/* ── CheckBox ── */
+QCheckBox {
+    color: #1E293B;
+    spacing: 10px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #0284C7;
+    border-color: #0284C7;
+}
+
+/* ── SpinBox ── */
+QSpinBox, QDoubleSpinBox {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: #1E293B;
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover {
+    border-color: #0284C7;
+}
+
+/* ── Scrollbar ── */
+QScrollBar:vertical {
+    background: transparent;
+    width: 6px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #CBD5E1;
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #94A3B8;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* ── Table ── */
+QTableWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    gridline-color: #E2E8F0;
+    border-radius: 10px;
+    color: #1E293B;
+}
+
+QTableWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+QTableWidget::item:selected {
+    background-color: rgba(2, 132, 199, 0.12);
+    color: #0F172A;
+}
+
+QHeaderView::section {
+    background-color: #F8FAFC;
+    color: #64748B;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #CBD5E1;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ── Tab widget ── */
+QTabWidget::pane {
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+QTabBar::tab {
+    background: transparent;
+    color: #64748B;
+    padding: 9px 22px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+
+QTabBar::tab:selected {
+    color: #0284C7;
+    border-bottom: 2px solid #0284C7;
+    font-weight: 700;
+}
+
+QTabBar::tab:hover {
+    color: #0F172A;
+}
+
+/* ── Separator ── */
+QFrame[frameShape="4"], QFrame[frameShape="5"] {
+    color: #E2E8F0;
+}
+
+/* ── Progress bar ── */
+QProgressBar {
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 4px;
+    height: 6px;
+    color: transparent;
+}
+
+QProgressBar::chunk {
+    background-color: #0284C7;
+    border-radius: 4px;
+}
+
+/* ── Labels ── */
+#section_header {
+    color: #64748B;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 16px 0 10px 0;
+}
+
+#value_label {
+    color: #0284C7;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#description_label {
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* ── FPS Overlay ── */
+#fps_overlay {
+    background-color: #0F172A;
+    color: #10B981;
+    font-size: 11px;
+    font-family: "Menlo", "Consolas", "Courier New", monospace;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* ── Demo banner ── */
+#demo_banner {
+    background-color: #FEF3C7;
+    color: #B45309;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 8px 22px;
+    border-bottom: 1px solid #FCD34D;
+    letter-spacing: 0.3px;
+}
+
+/* ── Mode banner ── */
+#mode_banner {
+    background-color: rgba(2, 132, 199, 0.08);
+    color: #0284C7;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 22px;
+    border-top: 1px solid rgba(2, 132, 199, 0.2);
+}
+
+/* ── Metric glow cards (Light palette) ── */
+#card_green {
+    background-color: rgba(16, 185, 129, 0.06);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card_blue {
+    background-color: rgba(2, 132, 199, 0.06);
+    border: 1px solid rgba(2, 132, 199, 0.3);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card_red {
+    background-color: rgba(239, 68, 68, 0.06);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card_amber {
+    background-color: rgba(245, 158, 11, 0.06);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 14px;
+    padding: 20px;
+}

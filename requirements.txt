@@ -1,0 +1,31 @@
+# SnapGuard AI — Requirements
+# Python 3.11+
+
+# GUI
+PySide6>=6.6.0
+
+# Computer vision
+opencv-python>=4.9.0
+Pillow>=10.0.0
+
+# AI inference
+onnxruntime>=1.17.0
+numpy>=1.24.0
+
+# System monitoring
+psutil>=5.9.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Optional: OCR for sensitive content detection
+# pytesseract>=0.3.10  # Requires Tesseract binary installed
+
+# Optional: Qualcomm AI Hub (install separately on Snapdragon PC)
+# qai-hub>=0.10.0
+# qai-hub-models>=0.10.0
+
+# Development / testing
+pytest>=7.4.0
+pytest-qt>=4.2.0

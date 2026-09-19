@@ -1,0 +1,530 @@
+/* SnapGuard AI — Premium Dark Theme v2.0 */
+
+/* ── Global ── */
+QWidget {
+    background-color: #050A18;
+    color: #E2E8F0;
+    font-family: "SF Pro Display", "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    border: none;
+    outline: none;
+}
+
+QMainWindow {
+    background-color: #050A18;
+}
+
+/* ── Sidebar ── */
+#sidebar {
+    background-color: #070D1F;
+    border-right: 1px solid rgba(0, 212, 255, 0.12);
+    min-width: 230px;
+    max-width: 230px;
+}
+
+#sidebar_logo_label {
+    color: #00D4FF;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 28px 22px 6px 22px;
+    letter-spacing: 0.5px;
+}
+
+#sidebar_tagline {
+    color: rgba(148, 163, 184, 0.7);
+    font-size: 10px;
+    padding: 0 22px 22px 22px;
+    letter-spacing: 0.3px;
+}
+
+/* Nav buttons */
+QPushButton#nav_btn {
+    background-color: transparent;
+    color: #64748B;
+    text-align: left;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+QPushButton#nav_btn:hover {
+    background-color: rgba(0, 212, 255, 0.06);
+    color: #CBD5E1;
+    border-left: 3px solid rgba(0, 212, 255, 0.4);
+}
+
+QPushButton#nav_btn[active="true"] {
+    background-color: rgba(0, 212, 255, 0.1);
+    color: #00D4FF;
+    border-left: 3px solid #00D4FF;
+    font-weight: 600;
+}
+
+/* ── Content area ── */
+#content_area {
+    background-color: #050A18;
+}
+
+#page_title {
+    color: #F1F5F9;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 28px 0 4px 0;
+    letter-spacing: 0.3px;
+}
+
+#page_subtitle {
+    color: #475569;
+    font-size: 12px;
+    padding: 0 0 24px 0;
+    letter-spacing: 0.2px;
+}
+
+/* ── Cards (Glassmorphism) ── */
+#card {
+    background-color: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(51, 65, 85, 0.6);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card:hover {
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    background-color: rgba(15, 23, 42, 0.95);
+}
+
+#card_title {
+    color: #475569;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+#card_value {
+    color: #F1F5F9;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 0 4px 0;
+}
+
+#card_sub {
+    color: #475569;
+    font-size: 11px;
+}
+
+/* ── Status badges ── */
+#badge_safe {
+    background-color: rgba(0, 255, 136, 0.1);
+    color: #00FF88;
+    border: 1px solid rgba(0, 255, 136, 0.35);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_warning {
+    background-color: rgba(255, 176, 32, 0.1);
+    color: #FFB020;
+    border: 1px solid rgba(255, 176, 32, 0.35);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_danger {
+    background-color: rgba(255, 77, 109, 0.12);
+    color: #FF4D6D;
+    border: 1px solid rgba(255, 77, 109, 0.4);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_info {
+    background-color: rgba(0, 212, 255, 0.1);
+    color: #00D4FF;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+#badge_neutral {
+    background-color: rgba(71, 85, 105, 0.2);
+    color: #64748B;
+    border: 1px solid rgba(71, 85, 105, 0.4);
+    border-radius: 20px;
+    padding: 4px 16px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+/* ── Buttons ── */
+QPushButton {
+    background-color: rgba(30, 41, 59, 0.8);
+    color: #CBD5E1;
+    border: 1px solid rgba(71, 85, 105, 0.5);
+    border-radius: 8px;
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: rgba(51, 65, 85, 0.9);
+    border-color: rgba(0, 212, 255, 0.4);
+    color: #E2E8F0;
+}
+
+QPushButton:pressed {
+    background-color: rgba(15, 23, 42, 0.9);
+}
+
+QPushButton:disabled {
+    color: #334155;
+    border-color: rgba(51, 65, 85, 0.3);
+    background-color: rgba(15, 23, 42, 0.4);
+}
+
+QPushButton#btn_primary {
+    background-color: rgba(0, 255, 136, 0.15);
+    color: #00FF88;
+    border: 1px solid rgba(0, 255, 136, 0.4);
+    font-weight: 700;
+}
+
+QPushButton#btn_primary:hover {
+    background-color: rgba(0, 255, 136, 0.25);
+    border-color: #00FF88;
+}
+
+QPushButton#btn_danger {
+    background-color: rgba(255, 77, 109, 0.15);
+    color: #FF4D6D;
+    border: 1px solid rgba(255, 77, 109, 0.4);
+    font-weight: 700;
+}
+
+QPushButton#btn_danger:hover {
+    background-color: rgba(255, 77, 109, 0.25);
+    border-color: #FF4D6D;
+}
+
+QPushButton#btn_blue {
+    background-color: rgba(0, 212, 255, 0.12);
+    color: #00D4FF;
+    border: 1px solid rgba(0, 212, 255, 0.4);
+    font-weight: 700;
+}
+
+QPushButton#btn_blue:hover {
+    background-color: rgba(0, 212, 255, 0.22);
+    border-color: #00D4FF;
+}
+
+/* ── Camera feed ── */
+#camera_frame {
+    background-color: #020510;
+    border: 1.5px solid rgba(0, 212, 255, 0.2);
+    border-radius: 12px;
+    min-width: 420px;
+    min-height: 320px;
+}
+
+/* ── Alert overlay ── */
+#alert_overlay {
+    background-color: rgba(255, 77, 109, 0.08);
+    border: 1.5px solid rgba(255, 77, 109, 0.5);
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+
+#alert_title {
+    color: #FF4D6D;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#alert_message {
+    color: #E2E8F0;
+    font-size: 13px;
+}
+
+/* ── Status bar ── */
+QStatusBar {
+    background-color: #030712;
+    color: #334155;
+    border-top: 1px solid rgba(0, 212, 255, 0.08);
+    font-size: 11px;
+    padding: 3px 12px;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+/* ── Sliders ── */
+QSlider::groove:horizontal {
+    background: rgba(51, 65, 85, 0.5);
+    height: 4px;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: #00D4FF;
+    width: 16px;
+    height: 16px;
+    margin: -6px 0;
+    border-radius: 8px;
+}
+
+QSlider::sub-page:horizontal {
+    background: rgba(0, 212, 255, 0.6);
+    border-radius: 2px;
+}
+
+/* ── Combo ── */
+QComboBox {
+    background-color: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(71, 85, 105, 0.5);
+    border-radius: 8px;
+    padding: 7px 14px;
+    color: #CBD5E1;
+    min-width: 160px;
+}
+
+QComboBox:hover {
+    border-color: rgba(0, 212, 255, 0.4);
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0F172A;
+    border: 1px solid rgba(51, 65, 85, 0.6);
+    color: #CBD5E1;
+    selection-background-color: rgba(0, 212, 255, 0.15);
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 12px;
+}
+
+/* ── CheckBox ── */
+QCheckBox {
+    color: #CBD5E1;
+    spacing: 10px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(71, 85, 105, 0.6);
+    border-radius: 4px;
+    background-color: rgba(15, 23, 42, 0.8);
+}
+
+QCheckBox::indicator:checked {
+    background-color: rgba(0, 212, 255, 0.25);
+    border-color: #00D4FF;
+}
+
+/* ── SpinBox ── */
+QSpinBox, QDoubleSpinBox {
+    background-color: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(71, 85, 105, 0.5);
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: #CBD5E1;
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover {
+    border-color: rgba(0, 212, 255, 0.4);
+}
+
+/* ── Scrollbar ── */
+QScrollBar:vertical {
+    background: transparent;
+    width: 6px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(51, 65, 85, 0.6);
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgba(0, 212, 255, 0.3);
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* ── Table ── */
+QTableWidget {
+    background-color: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(51, 65, 85, 0.4);
+    gridline-color: rgba(51, 65, 85, 0.3);
+    border-radius: 10px;
+    color: #CBD5E1;
+}
+
+QTableWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.2);
+}
+
+QTableWidget::item:selected {
+    background-color: rgba(0, 212, 255, 0.1);
+    color: #E2E8F0;
+}
+
+QHeaderView::section {
+    background-color: rgba(7, 13, 31, 0.8);
+    color: #475569;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ── Tab widget ── */
+QTabWidget::pane {
+    border: 1px solid rgba(51, 65, 85, 0.4);
+    border-radius: 10px;
+    background: rgba(15, 23, 42, 0.6);
+}
+
+QTabBar::tab {
+    background: transparent;
+    color: #475569;
+    padding: 9px 22px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+
+QTabBar::tab:selected {
+    color: #00D4FF;
+    border-bottom: 2px solid #00D4FF;
+}
+
+QTabBar::tab:hover {
+    color: #CBD5E1;
+}
+
+/* ── Separator ── */
+QFrame[frameShape="4"], QFrame[frameShape="5"] {
+    color: rgba(51, 65, 85, 0.4);
+}
+
+/* ── Progress bar ── */
+QProgressBar {
+    background-color: rgba(51, 65, 85, 0.3);
+    border: none;
+    border-radius: 4px;
+    height: 6px;
+    color: transparent;
+}
+
+QProgressBar::chunk {
+    background-color: #00D4FF;
+    border-radius: 4px;
+}
+
+/* ── Labels ── */
+#section_header {
+    color: #334155;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 16px 0 10px 0;
+}
+
+#value_label {
+    color: #00D4FF;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#description_label {
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* ── FPS Overlay ── */
+#fps_overlay {
+    background-color: rgba(2, 5, 16, 0.85);
+    color: #00FF88;
+    font-size: 11px;
+    font-family: "Menlo", "Consolas", "Courier New", monospace;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+/* ── Demo banner ── */
+#demo_banner {
+    background-color: rgba(255, 176, 32, 0.1);
+    color: #FFB020;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 8px 22px;
+    border-bottom: 1px solid rgba(255, 176, 32, 0.25);
+    letter-spacing: 0.3px;
+}
+
+/* ── Mode banner ── */
+#mode_banner {
+    background-color: rgba(0, 212, 255, 0.07);
+    color: #00D4FF;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 22px;
+    border-top: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+/* ── Metric glow cards (subclasses via objectName) ── */
+#card_green {
+    background-color: rgba(0, 255, 136, 0.05);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card_blue {
+    background-color: rgba(0, 212, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card_red {
+    background-color: rgba(255, 77, 109, 0.05);
+    border: 1px solid rgba(255, 77, 109, 0.2);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card_amber {
+    background-color: rgba(255, 176, 32, 0.05);
+    border: 1px solid rgba(255, 176, 32, 0.2);
+    border-radius: 14px;
+    padding: 20px;
+}
